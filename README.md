@@ -20,7 +20,7 @@ The output prints the PM2.5 sampled value for each station and the overall PM2.5
 
 ### How to run
 
-Type the following command into the terminal (these are the latitude and latitudes for Vancouver, BC and Burnaby, BC):
+Type the following command into the terminal (these are the latitude and longitude for Vancouver, BC and Burnaby, BC):
 ```
 python airpollutant.py 49.2827 123.1207 49.2488 122.9805 1 5
 ```
