@@ -54,7 +54,7 @@ def get_data_for_stations(station_ids):
             try:
                 air_data, error = future.result()  # Extract the data for the future
                 # If data is found then extract the station name and value and append it to the data list
-                if air_data and 'pm25' in air_data['data']['iaqi'] and 'iaqi' in air_data['data'] and 'data' in air_data:
+                if air_data and 'data' in air_data and 'iaqi' in air_data['data'] and 'pm25' in air_data['data']['iaqi']:
                     station_name = air_data['data']['city']['name']
                     value = air_data['data']['iaqi']['pm25']['v']
                     data_list.append({'station_name': station_name, 'pm25': value})
